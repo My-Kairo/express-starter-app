@@ -14,7 +14,7 @@ module.exports = function pizzaPerfect(){
             price += 76.99;
         }else if(size === 'large'){
             price += 98.99;
-        }else return;
+        }else 
         pizzaList.push({
             size,
             price
