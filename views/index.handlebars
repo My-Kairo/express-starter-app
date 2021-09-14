@@ -1,15 +1,94 @@
-<h1>Counter Index</h1>
+<h1>PERFECT PIZZA</h1>
 
 
 <div>
-    Start here
+    {{!-- Start here --}}
 
-    <form action="/count" method="post">
-        <div class="counter" >
-            {{counter}}
+    <form action="/order" method="post">
+        <div class="shoppingCart" >
+            <h4>Shopping Cart</h4>
+            <table>
+                <tr>
+                    <th>SIZE</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                   <td>Medium</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                     <td>Large</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr><td>Grand Total{{grandTotal}}</td>
+                </tr>
+            </table>
+            <input class="order" type="submit" value="Order" name="order">
         </div>    
-        <input type="submit" value="Press button to count">
-    
     </form>
+    <br>
+    <div class="pizzas">
+    <form action="/buyL" method="POST">
+        <div class="large">
+            {{!-- <img src="/pizza.jpg"> --}}
+            <h3>Large Pizza</h3>
+                <h5>R87.99</h5>
+                <p>
+                    Large margeritha pizza with 3 toppings max.
+                    3 meat toppings amx.
+                    3 or less other toppings.
+                </p>
+                <input class="buy" type="submit" value="Buy" name="large">
+        </div>
+        </form>
+        <form action="/buyM" method="POST">
+        <div class="medium">
+            {{!-- <img src="/pizza.jpg"> --}}
+            <h3>Medium Pizza</h3>
+                <h5>R58.99</h5>
+                <p>
+                    medium margeritha pizza with 3 toppings max.
+                    2 or less meat topping.
+                    3 or less other toppings
+                </p>
+                <input class="buy" type="submit" value="Buy" name="medium">
+        </div>
+        </form>
+        <form action="/buyS" method="POST">
+        <div class="small">
+            {{!-- <img src="/pizza.jpg"> --}}
+            <h3>Small Pizza</h3>
+                <h5>R31.99</h5>
+                <p> small pizza with 3 toppings
+                    1 meat topping.
+                    3 or less toppings.
+                </p>
+                <input class="buy" type="submit" value="buy" name="small">
+        </div>
+        </form>
+    </div>
+    
+    <div class="footer">
+        <div class="left">
+            Contact: (021)-541-1000<br>
+            twitter<br>
+            facebook<br>
+            instagram<br>
+            @perfectpizza.com
+        </div>
+        <div class="right">
+            Pizza Plaza<br>
+            Silver Road<br>
+            Base Town<br>
+        </div>
 
+    </div>
 </div>

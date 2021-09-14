@@ -1,0 +1,32 @@
+<div class="row">
+<form action="/cart" method="post">
+        <div class="shoppingCart" >
+            <h4>Shopping Cart</h4>
+            <table>
+                <tr>
+                    <th>SIZE</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>{{quantity}}</td>
+                    <td>{{price}}</td>
+                </tr>
+                <tr>
+                   <td>Medium</td>
+                    <td>{{quantity}}</td>
+                    <td>{{price}}</td>
+                </tr>
+                <tr>
+                     <td>Large</td>
+                    <td>{{quantity}}</td>
+                    <td>{{price}}</td>
+                </tr>
+                <tr><td>Grand Total{{grandTotal}}</td>
+                </tr>
+            </table>
+            <input class="order" type="submit" value="Order" name="order">
+        </div>    
+    </form>
+	</div>
